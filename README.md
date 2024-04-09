@@ -7,3 +7,4 @@
 #### Aula 03 (03/04/2024) - Revisão de Git e Introdução aos conceitos de Classes e Objetos: https://github.com/jerffesongd/curso-poo/blob/main/Aula_03.pdf
 
 #### Aula 04 (08/04/2024) - Métodos e parâmetros opcionais: https://github.com/jerffesongd/curso-poo/blob/main/Aula_04.pdf
+
