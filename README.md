@@ -8,3 +8,8 @@
 
 #### Aula 04 (08/04/2024) - Métodos e parâmetros opcionais: https://github.com/jerffesongd/curso-poo/blob/main/Aula_04.pdf
 
+#### Aula 05 (09/04/2024) - Contrutores: https://github.com/jerffesongd/curso-poo/blob/main/Aula_05.pdf
+
+#### Aula 06 (10/04/2024) - Associações entre Objetos: https://github.com/jerffesongd/curso-poo/blob/main/Aula_06.pdf
+
+#### Formulário de Feedback: https://forms.gle/P3bTqwuL7ixsTt8M8
