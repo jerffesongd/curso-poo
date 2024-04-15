@@ -10,6 +10,6 @@
 
 #### Aula 05 (09/04/2024) - Contrutores: https://github.com/jerffesongd/curso-poo/blob/main/Aula_05.pdf
 
-#### Aula 06 (10/04/2024) - Associações entre Objetos: https://github.com/jerffesongd/curso-poo/blob/main/Aula_06.pdf
+#### Aula 06 (10/04/2024) - Exercíco: https://github.com/jerffesongd/curso-poo/blob/main/Aula_06.pdf
 
-#### Formulário de Feedback: https://forms.gle/P3bTqwuL7ixsTt8M8
+#### Aula 07 (15/04/2024) - Revisão e Associações entre Objetos: https://github.com/jerffesongd/curso-poo/blob/main/Aula_07.pdf
