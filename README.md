@@ -13,3 +13,5 @@
 #### Aula 06 (10/04/2024) - Exercíco: https://github.com/jerffesongd/curso-poo/blob/main/Aula_06.pdf
 
 #### Aula 07 (15/04/2024) - Revisão e Associações entre Objetos: https://github.com/jerffesongd/curso-poo/blob/main/Aula_07.pdf
+
+#### Aula 08 (16/04/2024) - Modificadores de acesso e exercícios: https://github.com/jerffesongd/curso-poo/blob/main/Aula_08.pdf
