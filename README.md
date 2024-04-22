@@ -17,3 +17,7 @@
 #### Aula 08 (16/04/2024) - Modificadores de acesso e exercícios: https://github.com/jerffesongd/curso-poo/blob/main/Aula_08.pdf
 
 #### Aula 09 (17/04/2024) - Modificadores de acesso e exercícios: https://github.com/jerffesongd/curso-poo/blob/main/Aula_09.pdf
+
+#### Aula 10 (22/04/2024) - Herança e exercícios: https://github.com/jerffesongd/curso-poo/blob/main/Aula_10.pdf
+
+## Pesquisa de feedback - https://forms.gle/fug9xNWAFM6rvnqe8
