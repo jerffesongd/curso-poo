@@ -20,4 +20,4 @@
 
 #### Aula 10 (22/04/2024) - Herança e exercícios: https://github.com/jerffesongd/curso-poo/blob/main/Aula_10.pdf
 
-## Pesquisa de feedback - https://forms.gle/fug9xNWAFM6rvnqe8
+#### Aula 11 (23/04/2024) - Herança e exercícios: https://github.com/jerffesongd/curso-poo/blob/main/Aula_10.pdf
