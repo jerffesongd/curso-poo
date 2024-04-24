@@ -20,4 +20,6 @@
 
 #### Aula 10 (22/04/2024) - Herança e exercícios: https://github.com/jerffesongd/curso-poo/blob/main/Aula_10.pdf
 
-#### Aula 11 (23/04/2024) - Herança e exercícios: https://github.com/jerffesongd/curso-poo/blob/main/Aula_10.pdf
+#### Aula 11 (23/04/2024) - Herança e exercícios: https://github.com/jerffesongd/curso-poo/blob/main/Aula_11.pdf
+
+#### Atividade Avaliativa (Prazo para entrega 29/04/2024): https://github.com/jerffesongd/curso-poo/blob/main/Atividade_Avaliativa_-_01.pdf
