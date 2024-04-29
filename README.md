@@ -25,4 +25,4 @@
 #### Atividade Avaliativa (Prazo para entrega 29/04/2024): https://github.com/jerffesongd/curso-poo/blob/main/Atividade_Avaliativa_-_01.pdf
 - Link para envio da Avaliação: https://forms.gle/ooHnqFbZJ3B9eQXx8 
 
-#### Aula 12 (29/04/2024) - Herança e exercícios: https://github.com/jerffesongd/curso-poo/blob/main/Aula_12.pdf
+#### Aula 12 (29/04/2024) - Polimorfismo e Sobrescrita de métodos: https://github.com/jerffesongd/curso-poo/blob/main/Aula_12.pdf
