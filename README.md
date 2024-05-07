@@ -29,4 +29,6 @@
 
 #### Aula 13 (30/04/2024) - Classe Abstrata e Interfaces: -
 
-#### Aula 13 (30/04/2024) - Revisão: https://github.com/jerffesongd/curso-poo/blob/main/Aula_14.pdf
+#### Aula 14 (06/05/2024) - Revisão: https://github.com/jerffesongd/curso-poo/blob/main/Aula_14.pdf
+
+#### Aula 15 (07/04/2024) - Revisão: https://github.com/jerffesongd/curso-poo/blob/main/Aula_15.pdf
