@@ -1,0 +1,290 @@
+class Menu {
+    
+    private itensMenu: ItemMenu[] = [];
+    
+    constructor() {
+        this.itensMenu.push(new ItemMenu("1", "Atacar"));
+        this.itensMenu.push(new ItemMenu("2", "Atacar Especial"));
+        this.itensMenu.push(new ItemMenu("3", "Tomar Poção de HP"));
+        this.itensMenu.push(new ItemMenu("4", "Tomar Poção de MP"));
+        this.itensMenu.push(new ItemMenu("5", "Defender"));
+    }
+
+    imprimirMenu() {
+        
+        this.itensMenu.forEach(itemMenu => console.log(`${itemMenu.getOpcao()} - ${itemMenu.getTextoOpcao()}`))
+        
+        var entrada = require('prompt-sync')();
+        var opcaoSelecionada = entrada('Por favor, Selecione uma opção');
+
+        return opcaoSelecionada;
+    }
+    
+}
+
+class ItemMenu {
+
+    private opcao;
+    private textoOpcao;
+
+    constructor(op: string, texto:string) {
+        this.opcao = op;
+        this.textoOpcao = texto;
+    }
+    
+    public getOpcao() : string {
+        return this.opcao;
+    }
+    
+    public getTextoOpcao() : string {
+        return this.textoOpcao;
+    }
+    
+}
+
+class Coliseu {
+    private boss: Monstro;
+
+    constructor(m) {
+        this.boss = m;
+    }
+    
+    public getMonstro() : Monstro {
+        return this.boss;
+    }
+    
+}
+
+class Monstro {
+
+    private hp: number;
+    private hpMax: number;
+    private mp: number;
+    private forca: number;
+    private defesa: number;
+    private recebeuBuuf:boolean = false;
+
+    constructor(hp, mp, forca, defesa) {
+        
+        this.hp = hp;
+        this.hpMax = hp;
+
+        this.mp = mp;
+        this.forca = forca;
+        this.defesa = defesa;
+    }
+
+
+    receberDano(danoSofrido: number) {
+
+        if (this.hp < this.hpMax * 0,25) {
+            danoSofrido /= 2;
+
+            if (!this.recebeuBuuf) {
+                this.forca *= 1,1;
+                this.defesa *= 1,3;
+                this.recebeuBuuf = true;
+            }
+            
+        }
+
+        if (danoSofrido > this.defesa) {
+            this.hp = this.hp - danoSofrido;
+        }
+
+        return this.hp;
+    }
+
+    public getHp() : number {
+        return this.hp;
+    }
+
+    public getMp() : number {
+        return this.mp;
+    }
+    
+    public getAtaque() : number {
+        return this.forca;
+    }
+
+    public getDefesa() : number {
+        return this.defesa;
+    }
+
+    
+}
+
+class Equipamento {
+    private nome;
+    private aumentoAtaque;
+    private aumentoDefesa;
+
+    constructor (nome, at, def) {
+        this.nome = nome;
+        this.aumentoAtaque = at;
+        this.aumentoDefesa = def;
+    }  
+
+    public getNome() {
+        return this.nome;
+    }
+
+    public getAumentoAtaque() {
+        return this.aumentoAtaque;
+    }
+
+    public getAumentoDefesa() {
+        return this.aumentoDefesa;
+    }
+    
+}
+
+class Lutador {
+
+    private hp: number;
+    private hpMax: number;
+    private mp: number;
+    private mpMax: number;
+    private forca: number;
+    private defesa: number;
+    
+    private capacete: Equipamento;
+    private armadura: Equipamento;
+    private arma: Equipamento;
+
+    constructor(hp, mp, f, d, c, a, ar) {
+        this.hp = hp;
+        this.mp = mp;
+        this.forca = f;
+        this.defesa = d;
+        this.capacete = c;
+        this.armadura = a;
+        this.arma = ar;
+
+        this.hpMax = hp;
+        this.mpMax = mp;
+    }
+
+    exibirInfoLutador() {
+        console.log(`\nInformações do Lutador:\n
+                    HP: ${this.hp}\n
+                    MP: ${this.mp}\n
+                    Força: ${this.forca}\n
+                    Defesa: ${this.defesa}\n
+                    Capacete: ${this.capacete.getNome()}(${this.capacete.getAumentoAtaque()/this.capacete.getAumentoDefesa()})\n
+                    Armadura: ${this.armadura.getNome()}(${this.armadura.getAumentoAtaque()/this.armadura.getAumentoDefesa()})\n
+                    Arma: ${this.arma.getNome()}(${this.arma.getAumentoAtaque()/this.arma.getAumentoDefesa()})`) 
+    }
+
+    getAtaque() {
+        return this.forca + this.capacete.getAumentoAtaque() + this.armadura.getAumentoAtaque() + this.arma.getAumentoAtaque();
+    }
+
+    getAtaqueEspecial() {
+
+        if (this.mp < this.mpMax * 0,20) {
+            console.log("MP insuficiente");
+            this.mp -= (this.mpMax * 0,20);
+            return 0;
+        }
+
+        return (this.forca + this.capacete.getAumentoAtaque() + this.armadura.getAumentoAtaque() + this.arma.getAumentoAtaque()) * 1,5;
+    }
+
+    receberDano(danoSofrido: number) {
+
+        if (danoSofrido > this.getDefesaComEquipamento()) {
+            this.hp = this.hp - danoSofrido;
+        }
+
+        return this.hp;
+    }
+
+    tomarPocaoHP() {
+        this.hp +=  (this.hpMax * 0,25);  
+    }
+
+    tomarPocaoMP() {
+        this.mp +=  (this.mpMax * 0,25); 
+    }
+
+    public getHp() : number {
+        return this.hp;
+    }
+
+    public getMp() : number {
+        return this.mp;
+    }
+    
+    public getForca() : number {
+        return this.forca;
+    }
+
+    public getDefesa() : number {
+        return this.defesa;
+    }
+
+    public getDefesaComEquipamento() : number {
+        return this.defesa + this.capacete.getAumentoDefesa() + this.armadura.getAumentoDefesa() + this.armadura.getAumentoDefesa();
+    }
+}
+
+
+class Jogo {
+
+    private menu: Menu;
+    private lutador: Lutador;
+    private coliseu: Coliseu;
+
+    constructor(m, l, c) {
+        this.menu = m;
+        this.lutador = l;
+        this.coliseu = c;
+    }
+
+    jogar() {
+
+        do {
+
+            let opcao = this.menu.imprimirMenu();
+
+            switch(opcao) {
+                case "1":
+                    this.coliseu.getMonstro().receberDano(this.lutador.getAtaque());
+                    if (this.coliseu.getMonstro().getHp() < 0) {
+                        this.lutador.receberDano(this.coliseu.getMonstro().getAtaque())
+                    }
+                case "2":
+                    this.coliseu.getMonstro().receberDano(this.lutador.getAtaqueEspecial());
+                    if (this.coliseu.getMonstro().getHp() < 0) {
+                        this.lutador.receberDano(this.coliseu.getMonstro().getAtaque())
+                    }
+                case "3":
+                    this.lutador.tomarPocaoHP();
+                case "4":
+                    this.lutador.tomarPocaoMP();
+                case "5":
+                    console.log("Defesa");
+                default:
+                    console.log("Opção Invalida")
+            }
+
+            this.lutador.exibirInfoLutador();
+
+            if (this.lutador.getHp() < 0) {
+                console.log("VocÊ foui destroçado")
+            }
+
+            if (this.coliseu.getMonstro().getHp() < 0) {
+                console.log("Parabéns!!")
+            }
+
+        } while(this.lutador.getHp() > 0 && this.coliseu.getMonstro().getHp() > 0);
+
+    }
+
+}
+
+let jogo = new Jogo(new Menu(), new Lutador(150, 100, 300, 240, new Equipamento("Elmo de Valquiria", 30, 40), new Equipamento("Manto de Adepto", 35, 50), new Equipamento("Lança do Destino", 45, 5)), new Coliseu(new Monstro(300, 200, 75, 50)));
+
+jogo.jogar();
