@@ -33,7 +33,7 @@
 
 #### Aula 15 (07/04/2024) - Revisão: https://github.com/jerffesongd/curso-poo/blob/main/Aula_15.pdf
 
-#### Aula 15 (07/04/2024) - Atributos e métodos estáticos: https://github.com/jerffesongd/curso-poo/blob/main/Aula_16.pdf
-
 #### Atividade Avaliativa 02 (Prazo para entrega 15/05/2024): https://github.com/jerffesongd/curso-poo/blob/main/Atividade_Avaliativa_02.pdf
 - Link para envio da Avaliação 02: https://forms.gle/Yb7STtDQEvDRJ5QL7
+
+#### Aula 16 (21/05/2024) - Atributos e métodos estáticos: https://github.com/jerffesongd/curso-poo/blob/main/Aula_16.pdf
