@@ -37,3 +37,8 @@
 - Link para envio da Avaliação 02: https://forms.gle/Yb7STtDQEvDRJ5QL7
 
 #### Aula 16 (21/05/2024) - Atributos e métodos estáticos: https://github.com/jerffesongd/curso-poo/blob/main/Aula_16.pdf
+
+#### Aula 17 (22/05/2024) - Organizando o código: https://github.com/jerffesongd/curso-poo/blob/main/Aula_17.pdf
+
+#### Formulário de FeedBack
+- https://forms.gle/6YUwQMyWj7qcvCpB8
